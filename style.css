@@ -1,0 +1,655 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif, Arial;
+}
+.navbar {
+    background-color: #00aeff;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;    
+}
+
+.nav-image-1 {
+   padding: .5%;
+   margin-left: 40%;
+}
+#whatsapp {
+    width: auto;
+    height: 5%;
+    position: absolute;
+    left: 56%; 
+    top: 1.5%;
+
+}
+.line-1 {
+    border-right: 2px solid white;
+    height: 8vh;
+    position: absolute;
+    left: 60%;
+    /* margin-left: -3px; */
+    top: 0;
+}
+.line-2 {
+    border-right: 2px solid white;
+    height: 8vh;
+    position: absolute;
+    left: 75%;
+    /* margin-left: -3px; */
+    top: 0;
+}
+.line-3 {
+    border-right: 2px solid white;
+    height: 8vh;
+    position: absolute;
+    left: 85%;
+    /* margin-left: -3px; */
+    top: 0;
+}
+#ng-flag {
+    width: 10%;
+    height: auto;
+}
+#nairaSign {
+font-size: 18px;
+font-family: serif;
+position: absolute;
+left: 16%;
+top: 7%;
+color: white;
+}
+.nav-dropdwn{
+    overflow: hidden;
+    background-color: none;
+}
+.dropdown {
+    position: absolute;
+    left: 75%;
+    top: 2.5%;
+    float: left;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+.dropdown .dropbtn{
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: 2;
+}
+.dropdown-list {
+    display: none;
+    position: absolute;
+    right: 80%;
+    float: right;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width: 65%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-list p, ul {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+}
+.show {
+    display: block;
+}
+.fa-caret-down {
+    position: absolute;
+    top: 45%;
+    color: white;
+    margin-left: 6%;
+}
+#user {
+    width: 35%;
+}
+.navAccount .fa-caret-down {
+   position: absolute;
+   top: 45%;
+   right: -20%;
+}
+.navAccount{
+    position: absolute;
+    left: 86%;
+    top: 2%;
+    color: white;
+}
+.userDropbtn {
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.hero-overlay {
+    height: 100%;
+    width: 100%;
+}
+.hero-text {
+     text-align: center;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+}
+.hero-text p {
+    padding: 1rem;
+}
+.hero-box-container {
+    background-color: white;
+    width: 80%;
+    height: 15vh;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hero-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 45%;
+    height: 6vh;
+    position: absolute;
+    right: 51%;
+    top: 30%;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding-inline: 1.5rem;
+    padding-block: 0.7em;
+}
+.date-input {
+   margin-left: 11%;
+}
+.date {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 30%;
+    height: 6vh;
+    position: absolute;
+    top: 30%;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding-inline: 1.5rem;
+    padding-block: 0.7em;
+}
+.search-button{
+    position: initial;
+    left: 20%;
+}
+.search {
+    padding: 12px 24px;
+    width: 120%;
+    height: 6vh;
+    margin-left: 41%;
+    margin-top: 27%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00aeff;
+    border: none;
+    color: #f9f9f9;
+}
+/* suggested destinations */
+.destinations {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 5rem;
+}
+.destination-header {
+    color: #555555;
+    font-size: 25px;
+    padding: 1%;
+}
+.destination-paragraph {
+    font-size: 20px;
+    color: #555555
+}
+.destination-line {
+    width: 3rem;
+    height: 3px;
+    background-color: #00aeff;
+    margin: 2rem auto;
+}
+
+.destination-card {
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+transform: translateY(2rem);
+transform: translateX(3.5rem);
+
+}
+.card {
+    flex-basis: 25rem;
+    border: 0.2rem solid #00aeff;
+    padding: 1rem 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.card-header{
+    font-size: 17px;
+    margin-bottom: 10%;
+    color: #00aeff;
+}
+.card-subtitle {
+    color: #555555;
+}
+.card:hover {
+    color: white;
+    background-color: #00aeff;
+}
+
+/* Top hotel deal */
+.top-hotel {
+    text-align: center;
+    padding: 0 15rem;
+}
+.top-header {
+    /* font-size: 17px; */
+    color: #555555;
+}
+.top-subtitle {
+    color: #555555;
+    margin-top: 1%;
+}
+.top-divider {
+    width: 3rem;
+    height: 3px;
+    background-color: #00aeff;
+    margin: 1rem auto;
+}
+
+/* hotel cards */
+.top-hotel {
+    padding: 0 10rem;
+}
+.top-hotel .rows {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.top-hotel-cards {
+    flex-basis: 40%;
+    text-align: left;
+    /* width: 30%; */
+    transition: box-shadow ease-in 0.3s;
+}
+.top-hotel-img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.top-hotel-img:hover{
+    cursor: pointer;
+}
+.top-hotel-title {
+    font-size: 20px;
+    color: #00aeff;
+}
+.top-hotel-subtitle {
+    font-weight: light;
+    color: #555555;
+    margin-top: 10px;
+}
+.top-hotel-cards .card-content {
+    border: 0.3px solid #555555;
+    border-radius: 0 0 5px 5px;
+    /* margin-top: -5px; */
+    padding: 1rem;
+}
+
+.top-hotel-cards .card-discount {
+    width: 45%;
+    height: 4vh;
+    background-color: #fd8b3f;
+    transform: translateY(-18rem);
+    margin-left: -1rem;
+    padding: 4px 1px 4px 6px;
+    text-align: center;
+}
+.top-hotels-card .card-discount > div {
+    position: relative;
+  }
+  .card-discount .listing {
+    color: #f9f9f9;
+    align-items: center;
+    font-size: 16px;
+    /* font-weight: 700; */
+  }
+  .card-discount .listing span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .top-hotel-cards .card-discount .card-slant::after {
+    background-color: #fd8b3fce;
+    content: "";
+    width: 3rem;
+    display: block;
+    position: absolute;
+    height: 1rem;
+    transform: skewY(30deg);
+    transform-origin: 100% 70%;
+  }
+
+  /* Popular section */
+  .popular {
+    margin-bottom: 10rem;
+  }
+
+  .popular .rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+.popular-card {
+    /* background-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5) ; */
+}
+.popular .rows .popular-card {
+    transition: all ease-in 0.5s;
+    height: 15rem;
+    cursor: pointer;
+}
+.popular .rows .popular-card:hover .card-layer {
+    opacity: 1;
+}
+.rows .popular-card-img {
+    width: 100%;
+    border-radius: 1px 1px 5px 5px;
+    vertical-align: middle;
+    filter: brightness(60%);
+}
+.popular-card .card-details {
+    position: relative;
+    top: -10rem;
+    text-align: center;
+    color: #f9f9f9;
+}
+.popular-card .card-details h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.popular-card .card-details p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.popular-card .card-layer {
+    width: 100%;
+    text-align: center;
+    height: 6rem;
+    opacity: 0;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.6s;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(-9.85rem);
+}
+.popular-card .card-layer .card-cta {
+    margin: 0 auto;
+    padding: 12px 16px;
+    color: #f9f9f9;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.6s;
+    border-radius: 5px;
+    border: 1px solid #f9f9f9;
+    transform: translateY(2.5rem);
+    font-weight: bold;
+    text-decoration: none;
+}
+.popular-card .card-layer .card-cta:hover {
+    background-color: #00aeff;
+    border: none;
+}
+/* Which hotel section */
+.book-hotel .rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+.book-hotel .last {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 8.4rem;
+}
+.book-hotels-card .card-header {
+    color: #00aeff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.book-hotels-card .card-caption:nth-child(2) {
+    font-size: 15px;
+    margin-top: -1rem;
+}
+.book-hotels-card .card-caption {
+    color: #555555;
+}
+/* Special Hotel Deals and Offers */
+.special-offer {
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 5rem;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    color: #555555;
+}
+.special-offer .special-offer-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+.special-offer .special-offer-caption {
+    font-size: 20px;
+    padding: 1rem;
+}
+.special-offer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.special-offer-form .form-input {
+    width: 35%;
+    height: 3rem;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 0 2rem;
+    outline: transparent;
+}
+.special-offer-form .form-input:focus {
+    border: 1px solid #00aeff;
+}
+.special-offer-form .form-button {
+    padding: 16px 25px;
+    background-color: #00aeff;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.special-offer-form .form-button:hover {
+    background-color: #0284c0;
+}
+/* We've been featured */
+.feature-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+/* Get more bookings */
+.bookings .form-button {
+    padding: 10px 40px;
+    background-color: #00aeff;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.bookings .form-button:hover {
+    background-color: #0284c0;
+}
+/* Get the Hotels.ng app */
+.get-app {
+    margin-top: 3rem;
+    padding: 6rem 0 0 0;
+    background-color: #eff8fb;
+  }
+  
+  .get-app__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  
+  .get-app__header {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #2196f3;
+  }
+  
+  .get-app__col h3 {
+    font-size: 2.4rem;
+    color: #4f4f4f;
+    line-height: 1.1;
+    margin-top: 1rem;
+  }
+  
+  .get-app__col p {
+    margin-top: 1rem;
+    color: #4f4f4f;
+    font-weight: 500;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .get-app__col img {
+  }
+  
+  /* Enter your email address to unlock hotel deals */
+  .notification {
+    /* margin-top: -5rem; */
+    background-color: #084482;
+    padding: 3rem 15rem;
+  }
+  
+  .notification .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .notification__col h3 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .notification__col p {
+    color: #00aeff;
+    font-size: 1.5rem;
+  }
+  
+  .notification__form {
+    width: 50%;
+    /* background-color: red; */
+  }
+  
+  .notification__form form {
+    width: 100%;
+  }
+  
+  .notification__input {
+    width: 60%;
+    height: 41px;
+    padding: 0 10px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+    color: #4f4f4f;
+  }
+  
+  .notification__btn {
+    width: 25%;
+    margin-left: -6px;
+    border-radius: 0;
+    color: #fff;
+    background-color: #00aeff;
+    border: none;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    height: 41px;
+    margin-bottom: 0;
+  }
+  
+  /* FOOTER */
+  .footer {
+    text-align: left;
+    padding: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .footer .row {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  
+  .footer__col h4 {
+    color: #9fa7ad;
+    font-size: 1.4rem;
+  }
+  
+  .footer__list {
+    list-style: none;
+  }
+  
+  .footer__items {
+    padding: 1px 0;
+  }
+  .footer__link {
+    color: #14b3f4;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+  }
